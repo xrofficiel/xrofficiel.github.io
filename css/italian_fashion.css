@@ -85,10 +85,7 @@ a:hover   { color: #ccc; }
   body { background-size: 100px; }
   .logo { width: 150px; }
   .title a { border-bottom: 4px solid #444;}
-  .site {
-    font-size: 65%;
-    line-height: 2.5em;
-  }
+  .site .header a.extra, nav a.extra  { font-size: 65%; line-height: 2.5em; }
 }
 
 /*figure.video {
