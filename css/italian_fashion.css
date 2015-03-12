@@ -82,17 +82,21 @@ a:hover   { color: #ccc; }
 
 /*when face hits logo*/
 @media screen and (max-width: 580px) {
-  body {
-    background-size: 100px;
-  }
+  body { background-size: 100px; }
   .logo { width: 150px; }
-
+  .title a { border-bottom: 4px solid #444;}
+  .site {
+    font-size: 65%;
+    line-height: 2.5em;
+  }
 }
 
-/*mobile-ish*/
-/*@media screen and (max-width: 420px) {
+/*figure.video {
+  padding-bottom: 56.25%;
+  position: relative;
 }
 */
+
 
 h2 { font-size: 22px; font-weight: bold; }
 .page-title { text-transform: capitalize;}
@@ -127,10 +131,12 @@ p.copyright a:hover {
   background: #444;
   height: 16px;
 }
-*/
+
 @media screen and (max-width: 420px) {
   .flash-player { display: none; }
 }
+*/
+
 
 .audio-title {
   display: inline-block; /*why do they have to be blocks?...*/
