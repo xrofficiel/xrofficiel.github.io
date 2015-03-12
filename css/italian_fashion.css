@@ -75,7 +75,7 @@ a:hover   { color: #ccc; }
 /*when face hits content*/
 @media screen and (max-width: 960px) {
   body {
-    background: white url(../images/sideshot-bg-big.jpg) top right no-repeat;
+    background: white url(../images/sideshot-bg-big.jpg) top right no-repeat fixed;
     background-size: 190px;
   }
 }
