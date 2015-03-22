@@ -13,47 +13,42 @@ title: XR Officiel - Rock Fran&ccedil;ais, Son Neuf
     <h2 class="page-title">{{ page.name | remove: '.html' }}</h2>
 
 
-    {% for gig in site.data.gig-list %}
+ <!--
+    assign: current_year = site.time | date: "%Y"
+    'fixnum compared with string' hack
+    assign: current_year = current_year | times: 1
+  -->
+  <!-- date: "%B %-d" -->
+  <!-- gig.year >= current_year &&  -->
+  <!-- minus: 604800 -->
+  <!-- minus: 172800 -->
+
+  <!-- expire_period samples -->
+    <!-- one day 172800 -->
+    <!-- one week: 604800 -->
+    <!-- one month: 2628000 -->
+
+
+  {% assign: today = site.time | date: "%s" %}
+
+  {% assign: expire_period = today | minus: 2628000 %}
+  {% assign: expire_period = expire_period | times: 1 %}
+
+
+  {% for gig in site.data.gig-list %}
+
+    {% assign: gig_date = gig.date | date: "%s" %}
+    {% assign: gig_date = gig_date | times: 1 %}
+
+    {% if gig_date > expire_period %}
 
     <p>
         <a href="{{ gig.url }}" target="_blank"><strong>{{ gig.venue }}</strong></a> &nbsp;/&nbsp; {{ gig.date }} <br />
         <span class="gig_addr">{{ gig.address }}</span>
     </p>
 
-    {% endfor %}
+    {% endif %}    
 
-    <!--
-    assign: current_year = site.time | date: "%Y"
-    'fixnum compared with string' hack
-    assign: current_year = current_year | times: 1
-    -->
-    <!-- date: "%B %-d" -->
-    <!-- gig.year >= current_year &&  -->
-    <!-- minus: 604800 -->
-    <!-- minus: 172800 -->
-
-    <!-- expire_period samples -->
-    <!-- one day 172800 -->
-    <!-- one week: 604800 -->
-
-
-    {% assign: today = site.time | date: "%s" %}
-
-    {% assign: expire_period = today | minus: 604800 %}
-    {% assign: expire_period = expire_period | times: 1 %}
-
-
-        {% for gig in site.data.gig-list %}
-
-            {% assign: gig_datum = gig.datum | date: "%s" %}
-            {% assign: gig_datum = gig_datum | times: 1 %}
-
-                {% if gig_datum > expire_period %}
-
-                    <p>{{ gig.venue }} // {{gig.datum}}</p>
-
-                {% endif %}    
-
-        {% endfor %}
+  {% endfor %}
 
 </div>
