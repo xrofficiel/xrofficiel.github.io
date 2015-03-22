@@ -1,9 +1,15 @@
 - venue: The Black Sheep, Brussels
   url: http://www.facebook.com/events/1407407912895070/
   address: Chausée de Boondael 8, 1050 Brussels, Belgium
-  date: Friday 6 March 21:30
+  tid: 2100
+  datum: March 15, 2015
+  year: 2015
+  first_gig_of_year: true
 
-- venue: Le café des artistes, Braine-l'Alleud
+
+- venue: Le Café des Artistes, Braine-l'Alleud (2015)
   url: http://www.facebook.com/events/1575553179324857/
   address: 4 rue jules Hans, 1420 Braine-l'Alleud, Belgium
-  date: Friday 13 March 21:00
+  tid: 2100
+  datum: March 10, 2015
+  year: 2015
