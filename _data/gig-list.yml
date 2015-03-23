@@ -1,19 +1,19 @@
-- venue: Binche
-  url: http://example.com
-  address: av. Wanderpepen, 7130 Binche, Belgium
+- venue: Le Star, Binche
+  url: https://www.facebook.com/events/454453388034890
+  address: av. Wanderpepen, 7130 Binche, Belgique
   date: Friday April 25, 2014
   year: 2014
   first_gig_of_year: true
 
-- venue: The Black Sheep, Brussels
+- venue: The Black Sheep, Bruxelles
   url: http://www.facebook.com/events/1407407912895070/
-  address: Chausée de Boondael 8, 1050 Brussels, Belgium
+  address: Chausée de Boondael 8, 1050 Bruxelles, Belgique
   date: Friday March 6, 2015
   year: 2015
   first_gig_of_year: true
 
 - venue: Le Café des Artistes, Braine-l'Alleud
   url: http://www.facebook.com/events/1575553179324857/
-  address: 4 rue jules Hans, 1420 Braine-l'Alleud, Belgium
+  address: 4 rue jules Hans, 1420 Braine-l'Alleud, Belgique
   date: Friday March 13, 2015
   year: 2015

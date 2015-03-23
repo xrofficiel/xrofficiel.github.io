@@ -184,3 +184,5 @@ a.back-link:hover {
 .gig-url:hover > strong {
   color: #90BD72;
 }
+.past_concerts a { color: #bbb;}
+.past_concerts a:hover { color: black; }
