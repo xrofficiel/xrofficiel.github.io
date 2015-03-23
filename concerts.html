@@ -42,10 +42,10 @@ title: XR Officiel - Rock Fran&ccedil;ais, Son Neuf
 
     {% if gig_date > expire_period %}
 
-    <p>
-        <a href="{{ gig.url }}" target="_blank"><strong>{{ gig.venue }}</strong></a> &nbsp;/&nbsp; {{ gig.date }} <br />
-        <span class="gig_addr">{{ gig.address }}</span>
-    </p>
+      <p>
+          <a class="gig-url" href="{{ gig.url }}" target="_blank"><strong>{{ gig.venue }}</strong> &nbsp;/&nbsp; {{ gig.date }} <br />
+          <span class="gig_addr">{{ gig.address }}</span></a>
+      </p>
 
     {% endif %}    
 
@@ -53,7 +53,9 @@ title: XR Officiel - Rock Fran&ccedil;ais, Son Neuf
 
 </div>
 
-<h2>Past concerts</h2>
+<br />
+
+<h3>Concerts pr&eacute;c&eacute;dents</h3>
 
 {% for gig in site.data.gig-list %}
   

@@ -64,7 +64,7 @@ nav.social {
   border-bottom: 16px solid #444;
 }
 
-a:link, a:visited  { color: #000; }
+a:link, a:visited  { color: #000; text-decoration: none; }
 a:hover   { color: #ccc; }
 
 .logo {
@@ -92,6 +92,9 @@ a:hover   { color: #ccc; }
 
 
 h2 { font-size: 22px; font-weight: bold; }
+h3 { font-size: 20px; font-weight: bold;color: #bbb; }
+
+
 .page-title { text-transform: capitalize;}
 
 p.copyright a {
@@ -172,8 +175,12 @@ a.back-link:hover {
   transform: scale(1.5);
 }
 
-/*tour.html specifics*/
+/*concerts specifics*/
 .gig_addr, .past_concerts {
   color: #888;
   font-size: 80%;
+}
+.gig-url:hover { color: black; }
+.gig-url:hover > strong {
+  color: #90BD72;
 }
