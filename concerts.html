@@ -52,3 +52,18 @@ title: XR Officiel - Rock Fran&ccedil;ais, Son Neuf
   {% endfor %}
 
 </div>
+
+<h2>Past concerts</h2>
+
+{% for gig in site.data.gig-list %}
+  
+  {% assign: gig_date = gig.date | date: "%s" %}
+  {% assign: gig_date = gig_date | times: 1 %}
+
+  {% if gig_date < expire_period %}
+
+    <p class="past_concerts">{{ gig.venue }} // {{gig.date}}</p>
+  
+  {% endif %}
+
+{% endfor %}

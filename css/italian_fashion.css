@@ -173,7 +173,7 @@ a.back-link:hover {
 }
 
 /*tour.html specifics*/
-.gig_addr {
+.gig_addr, .past_concerts {
   color: #888;
   font-size: 80%;
 }
