@@ -78,6 +78,8 @@ a:hover   { color: #ccc; }
     background: white url(../images/sideshot-bg-big.jpg) top right no-repeat fixed;
     background-size: 190px;
   }
+  .site { width:100%; }
+  #home { width:100%; }
 }
 
 /*when face hits logo*/
