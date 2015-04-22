@@ -60,7 +60,8 @@ ul.posts span {
   font-size: 115%;
   font-family: "tahoma";
   /*text-align: justify;*/
-  width: 42em;
+  /*width: 42em;*/
+  width: 75%;
   /*margin: 3em auto 2em;*/
   margin: 100px 0 auto 385px;
   line-height: 1.5em;

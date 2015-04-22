@@ -189,8 +189,9 @@ a.back-link:hover {
 
 
 
-
-/* not working, fellas...*/
+#home {
+  width: 65%;
+}
 .video-container {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
